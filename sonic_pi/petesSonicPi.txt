@@ -1,0 +1,37 @@
+live_loop:drums do
+  sample:loop_amen
+  sample:bass_drop_c
+  sleep 1.753
+end
+
+live_loop:bass_drum do
+  sample:bd_haus
+  sleep 0.43825
+end
+
+live_loop:ambient do
+  sample:ambi_choir
+  sleep 1.753
+  
+end
+
+
+live_loop:melody do
+  use_synth:mod_beep
+  with_fx:wobble do
+    with_fx:pitch_shift do
+      with_fx:octaver do
+        with_fx:whammy do
+          play 60
+          sleep 1.753
+          
+        end
+      end
+    end
+  end
+end
+
+live_loop:dj do
+  sample:vinyl_scratch
+  sleep 0.8765
+end
